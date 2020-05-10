@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="My Webpage">
+    <meta name="keywordss" content="Hello, World! website">
+    <meta name="author" content="Brian Musembi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <h1 align="center"><u>Guess The Random Number Between 1-6!</u></h1>
+    <div class="form">
+    <label for="number">Input your number: </label>
+    <input type="text" id="number" class="number">
+    <input type="submit" value="Submit Your Guess" class="guesssubmit" id="submitguess">
+    </div>
+    <script>
+      let number = document.getElementById("number").value;
+      document.getElementById("submitguess").onclick = function(){
+      let number = document.getElementById("number").value;
+      if (number > 0){
+        alert("You have chosen a positive number");}
+      else if (number == 0){
+        alert("You have chosen zero");}
+      else{
+        alert("You have chosen a negative number");}}
+    </script>
+    </body>
+</html>
